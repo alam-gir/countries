@@ -1,0 +1,133 @@
+/* ! import font  */
+/* poppins  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+/* country search section page  */
+#country-search {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#country-search > .header {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+#country-search > .header > .heading {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+#country-search > .header > .total-country-info {
+  font-size: 0.875rem;
+  color: #444;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+#country-search > .header > .total-country-info> .total {
+  color: tomato;
+  font-weight: 600;
+}
+
+/* search container , here include action buttons */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-container>.btns-container{
+  display: flex;
+  gap: .4rem;
+}
+.search-container > .search-type-btns-container {
+  display: flex;
+  gap: 0.5rem;
+}
+.search-type-btns-container > button,
+.sort-btns-container>.sort-btn{
+  height: 2.5rem;
+  padding: 0 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+/* if btn active  */
+.search-type-btns-container > button.active{
+  background: tomato;
+  border: tomato;
+  color: #fff;
+}
+
+.search-container > .search-box > input {
+  height: 2.5rem;
+  min-width: 20rem;
+  padding: 0 1rem;
+}
+
+.search-container > .search-box > input::-webkit-search-cancel-button{
+  display: none;
+}
+.search-container > .search-box > input,
+.search-container > .search-box > input::placeholder {
+  text-transform: capitalize;
+}
+
+/* search status  */
+.search-status>h1{
+    font-size: .875rem;
+    text-transform: capitalize;
+    color: #555;
+}
+.search-status>h1>span{
+    font-size: 1rem;
+    color: tomato;
+    font-weight: 600;
+}
+
+/* country card container  */
+.country-card-container {
+  max-width: 100%;
+  background-color: #7bc9ce56;
+  padding: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.country-card-container > .country-card {
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('./image/map_image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.country-card-container > .country-card > .country-name {
+    padding: .3rem;
+  font-size: .875rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>country serach | from API</title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- google material llink  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Rounded|Material+Icons+Outlined"rel="stylesheet">
+    <!-- js link  -->
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <section id="country-search">
+        <header class="header">
+            <h1 class="heading">world countries list</h1>
+            <h4 class="total-country-info"> total countries <span class="total">...</span></h4>
+        </header>
+        <div class="search-container">
+            <div class="btns-container">
+                <div class="search-type-btns-container">
+
+                    <button class="start-word-btn active">search with starting word</button>
+                    <button class="any-word-btn">search with any word</button>
+
+                </div>
+                <div class="sort-btns-container">
+                    <button class="sort-btn" value="z-a">z-a</button> <!-- value 1 == az, -1 = za -->   
+                </div>
+            </div>
+            <div class="search-box">
+                <input type="search" name="search" id="input-search" placeholder="search country...">
+            </div>
+            <div class="search-status"><h1><span>...</span></h1></div>
+
+        </div>
+        <div class="country-card-container">
+            <!-- demo country card start  -->
+            <!-- <div class="country-card">
+                <h1 class="country-name">bangladesh</h1>
+            </div> -->
+            <!-- demo country card end -->
+    </section>
+</body>
+</html>
